@@ -1,3 +1,8 @@
+---
+hidden: true
+noIndex: true
+---
+
 # Lua API
 
 doukutsu-rs includes a multiplayer-aware and event-based Lua API that lets you customize the behavior of Cave Story in many ways, allowing you to create stunning single and multi-player experiences. It's designed to be engine-agnostic as possible, for ease of implementation in other projects.
