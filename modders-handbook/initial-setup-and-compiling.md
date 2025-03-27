@@ -48,6 +48,10 @@ CMake is a build tool for C and C++ projects. You will not need to use CMake dir
 
 Go to the [CMake download page](https://cmake.org/download/), scroll down to "Binary distributions" and download the MSI installer.
 
+{% hint style="warning" %}
+The latest supported version of CMake is **3.31.6**. Building with any version greater than this will fail. If this version is missing on the download page, you can find it on the [Github release page](https://github.com/Kitware/CMake/releases/tag/v3.31.6) or on the [CMake website](https://cmake.org/files/v3.31/).
+{% endhint %}
+
 ![You should download the MSI installer instead of the ZIP file](<../.gitbook/assets/image (9).png>)
 
 Once you reach to the install options, it's very important to add CMake to PATH, so you must enable this setting, otherwise CMake will not be recognized by Cargo during dependency building.
