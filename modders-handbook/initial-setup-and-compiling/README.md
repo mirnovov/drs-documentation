@@ -22,7 +22,7 @@ You can download the [build tools from Microsoft's website](https://visualstudio
 
 Once you open the installer, you should select "Desktop development with C++" in the list of workloads, then press "Install" to start the installation. You don't need the other components. You may also install the build tools from the Visual Studio installer, if you're already a Visual Studio user.
 
-![Visual Studio Build Tools installation screen](../.gitbook/assets/image.png)
+![Visual Studio Build Tools installation screen](<../../.gitbook/assets/image (3).png>)
 
 This process will take a while, as it needs to install many components (around 7-8 GB).
 
@@ -36,7 +36,7 @@ You can download the `rustup` installer [from Rust's website](https://www.rust-l
 
 Once you've downloaded the executable, double clicking it will open up a command prompt. At the bottom, it will ask you to select an installation option. For our purposes, the default installation settings are sufficient, so you can type `1` and press Enter.
 
-![Installing Rust using the default installation settings](<../.gitbook/assets/image (18).png>)
+![Installing Rust using the default installation settings](<../../.gitbook/assets/image (18).png>)
 
 This process will also take a bit, but once it's done, it will ask you to press Enter to quit the installer.
 
@@ -52,11 +52,11 @@ Go to the [CMake download page](https://cmake.org/download/), scroll down to "Bi
 The latest supported version of CMake is **3.31.6**. Building with any version greater than this will fail. If this version is missing on the download page, you can find it on the [Github release page](https://github.com/Kitware/CMake/releases/tag/v3.31.6) or on the [CMake website](https://cmake.org/files/v3.31/).
 {% endhint %}
 
-![You should download the MSI installer instead of the ZIP file](<../.gitbook/assets/image (9).png>)
+![You should download the MSI installer instead of the ZIP file](<../../.gitbook/assets/image (9).png>)
 
 Once you reach to the install options, it's very important to add CMake to PATH, so you must enable this setting, otherwise CMake will not be recognized by Cargo during dependency building.
 
-![Select this option (or the third one) to add the CMake executable to the PATH.](<../.gitbook/assets/image (20).png>)
+![Select this option (or the third one) to add the CMake executable to the PATH.](<../../.gitbook/assets/image (20).png>)
 
 Once CMake is installed, we have installed all of the tools we need to compile the project. Woohoo!
 
@@ -68,7 +68,7 @@ Since doukutsu-rs uses Git for version control, you'd normally want to clone the
 
 Head over to [our GitHub repository](https://github.com/doukutsu-rs/doukutsu-rs), click on the green "Code" button and select "Download ZIP".
 
-![Download the doukutsu-rs repository as a ZIP.](<../.gitbook/assets/image (15).png>)
+![Download the doukutsu-rs repository as a ZIP.](<../../.gitbook/assets/image (15).png>)
 
 You may extract the contents of the ZIP archive wherever you want, however, we advise you to not extract it:
 
@@ -81,11 +81,11 @@ You may extract the contents of the ZIP archive wherever you want, however, we a
 
 We will do most of the work in a terminal/command line, therefore, the next step is to right click the directory you've just extracted and select "Open in Windows Terminal" (or Command Prompt/Powershell).
 
-![Opening the extracted doukutsu-rs directory in Windows Terminal on Windows 11.](<../.gitbook/assets/image (3).png>)
+![Opening the extracted doukutsu-rs directory in Windows Terminal on Windows 11.](<../../.gitbook/assets/image (3) (1).png>)
 
 A window like this should pop up:
 
-![doukutsu-rs source directory opened in Windows Terminal.](<../.gitbook/assets/image (1).png>)
+![doukutsu-rs source directory opened in Windows Terminal.](<../../.gitbook/assets/image (1) (1).png>)
 
 ...and we've finally reached the most exciting part of the process - compiling the engine. Run the following command to create a debug build:
 
@@ -97,7 +97,7 @@ This process is going to take a while, as it needs to download and compile all t
 
 Once the build has finished, you should be seeing the following:
 
-![doukutsu-rs finished building.](<../.gitbook/assets/image (14).png>)
+![doukutsu-rs finished building.](<../../.gitbook/assets/image (14).png>)
 
 > TL;DR: open the extracted directory in a terminal and run `cargo build`.
 
@@ -107,7 +107,7 @@ doukutsu-rs doesn't bundle the game's data files, therefore you will need to obt
 
 If you go back to your file explorer now, you'll be able to see a new directory called "target", with another directory called "debug" inside. If you see a file called "doukutsu-rs.exe" there, that means everything went smoothly! You must copy your "data" directory into this directory. You should be seeing the following file structure:
 
-![doukutsu-rs debug target directory with data files.](<../.gitbook/assets/image (23).png>)
+![doukutsu-rs debug target directory with data files.](<../../.gitbook/assets/image (23).png>)
 
 From here, you can double-click the `doukutsu-rs.exe` file to run the game. You can also run the following in the terminal if you want to build and run from one place:
 
@@ -238,7 +238,7 @@ git clone https://github.com/doukutsu-rs/doukutsu-rs.git
 cd doukutsu-rs
 ```
 
-![Cloning the doukutsu-rs repo using git.](<../.gitbook/assets/image (2).png>)
+![Cloning the doukutsu-rs repo using git.](<../../.gitbook/assets/image (2) (1).png>)
 
 ### 3. Compile the project
 
@@ -250,7 +250,7 @@ cargo build
 
 This process will take a while, as it has to fetch and compile lots of dependencies. Once you see the following message, you should be good to go:
 
-![cargo build finished for doukutsu-rs.](<../.gitbook/assets/image (8).png>)
+![cargo build finished for doukutsu-rs.](<../../.gitbook/assets/image (8).png>)
 
 This will build the project in debug mode, so you will find the executable in the `target/debug` subdirectory.
 
@@ -310,9 +310,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 Type `1` when prompted and press Enter:
 
-![rustup asking for installation options on Mac OS](<../.gitbook/assets/image (6).png>)
+![rustup asking for installation options on Mac OS](<../../.gitbook/assets/image (6).png>)
 
-After that, you need to add the Rust binaries to your PATH. The Linux guide contains [instructions for zsh (Mac OS default shell) and other shells](initial-setup-and-compiling.md#bash). If you haven't done any development on your Mac before, it's very likely that you need to follow the `zsh` guide. To check, you can run the following command:
+After that, you need to add the Rust binaries to your PATH. The Linux guide contains [instructions for zsh (Mac OS default shell) and other shells](./#bash). If you haven't done any development on your Mac before, it's very likely that you need to follow the `zsh` guide. To check, you can run the following command:
 
 ```
 echo $SHELL
@@ -331,7 +331,7 @@ cd doukutsu-rs
 
 Type `ls -ahg` to confirm that the cloning was successful. You should be seeing something like this:
 
-![doukutsu-rs root directory on Mac OS.](<../.gitbook/assets/image (19).png>)
+![doukutsu-rs root directory on Mac OS.](<../../.gitbook/assets/image (19).png>)
 
 ### 3. Compile the project
 
@@ -343,7 +343,7 @@ cargo install
 
 This process will take a while, as it has to fetch and compile lots of dependencies. Once you see the following message, you should be good to go:
 
-![doukutsu-rs finished building on Mac OS.](<../.gitbook/assets/image (13).png>)
+![doukutsu-rs finished building on Mac OS.](<../../.gitbook/assets/image (13).png>)
 
 This will build the project in debug mode, so you will find the executable in the `target/debug` subdirectory.
 

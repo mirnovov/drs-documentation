@@ -18,7 +18,8 @@
 ## Modder's handbook
 
 * [Introduction](modders-handbook/introduction.md)
-* [Initial setup and compiling](modders-handbook/initial-setup-and-compiling.md)
+* [Initial setup and compiling](modders-handbook/initial-setup-and-compiling/README.md)
+  * [Building the ports](modders-handbook/initial-setup-and-compiling/building-the-ports.md)
 * [Lua API](modders-handbook/lua-api.md)
 
 ## References

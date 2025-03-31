@@ -1,7 +1,5 @@
 # Windows
 
-{% include "../.gitbook/includes/if-you-dont-know-where-to-....md" %}
-
 Setting up doukutsu-rs on your Windows PC is straightforward - just follow those steps.
 
 ### 1. Download doukutsu-rs
