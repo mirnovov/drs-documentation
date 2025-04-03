@@ -21,7 +21,7 @@ Please note that this guide provides instructions for building ports on PC only.
 
 ### 1. Install Java
 
-The Android port is written in Java, and the build tools require the Java Runtime, so you need to install JDK (Java Development Kit) to build this port. The minimum version of Java required to run Android development tools is **Java 17 or greater**.
+The Android port is written in Java, and the build tools require the Java Runtime, so you need to install JDK (Java Development Kit) to build this port. The **minimum** version of Java required to run Android development tools is **Java 17**.
 
 #### Windows
 
@@ -98,8 +98,6 @@ To understand what version of the development kits you need to install, look at 
 Install exactly the development kits version, that are specified in the build config. Otherwise the build can fail.
 {% endhint %}
 
-If you want to build doukutsu-rs for Android 12 or lower, additionaly install the Platform SDK for the version of Android you want to build for. You can find a list of API levels on [the Android Developers portal](https://developer.android.com/tools/releases/platforms).
-
 ### 5. Configuring the project
 
 When all dependencies are installed, we can finaly open the project in Android Studio and configure it for building.
@@ -108,7 +106,7 @@ Open Android Studio, click `"Open project"` and select the `app` directory from 
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Open this exact folder, not the cloned repository itself or anything else.</p></figcaption></figure>
 
-When you open the project, in the bottom right corner will appear a notification asking you to install Android Gradle Plugin. Install it. If it will suggest to upgrade it, dismiss this notification. Then you can be sure that all installed components are supported by the engine.
+When you open the project, in the bottom right corner will appear a notification asking you to install Android Gradle Plugin. Install it. If it will suggest to upgrade it, dismiss this notification.
 
 After that, open `build.gralde` file from the `app` module and sync the project.
 

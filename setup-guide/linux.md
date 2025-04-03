@@ -21,7 +21,7 @@ You can find detailed instructions on how to install Flatpak for your distributi
 Via console you can install doukutsu-rs with the following command:
 
 ```
-flatpak install flathub io.github.doukutsu_rs.doukutsu-rs
+flatpak install -u flathub io.github.doukutsu_rs.doukutsu-rs
 ```
 
 If the installation is successful, there should usually be created a shortcut on Desktop or Start menu. From the console, you can run doukutsu-rs with the following command:
@@ -30,7 +30,7 @@ If the installation is successful, there should usually be created a shortcut on
 flatpak run io.github.doukutsu_rs.doukutsu-rs
 ```
 
-If you want to apply your own game data(for example, Cave Story+ or Switch data), place the `data` folder in the `$XDG_DATA_HOME/doukutsu-rs` directory (that being `$HOME/.var/app/io.github.doukutsu_rs.doukutsu-rs/data/doukutsu-rs` by default).
+If you want to apply your own game data (e.g. Cave Story+ or Switch data), place the `data` folder in the `$XDG_DATA_HOME/doukutsu-rs` directory (that being `$HOME/.var/app/io.github.doukutsu_rs.doukutsu-rs/data/doukutsu-rs` by default).
 
 ***
 
@@ -133,20 +133,18 @@ sudo apt install wine ttf-mscorefonts-installer
 
 #### Arch-based distributions (Arch Linux, Manjaro, EndeavourOS, etc.)
 
-You need to enable multilib repository before installing Wine. You can do it by simply uncommenting multilib section in `/etc/pacman.conf`:
+You need to enable multilib repository before installing Wine. You can do it by uncommenting multilib section in `/etc/pacman.conf`:
 
 ```
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 ```
 
-Then install `wine` package and its dependencies:
+Then install `wine` package and some of the optional dependencies (you don't need to install the `lib32-*` packages unless you plan to run 32-bit binary):
 
 <pre><code><strong>sudo pacman -Sy wine
-</strong>sudo pacman -S --needed --asdeps giflib lib32-giflib gnutls lib32-gnutls v4l-utils lib32-v4l-utils libpulse \
-lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib sqlite lib32-sqlite libxcomposite \
-lib32-libxcomposite ocl-icd lib32-ocl-icd libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs \
-lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader sdl2-compat lib32-sdl2-compat
+</strong>sudo pacman -S --needed --asdeps libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib \
+lib32-alsa-lib libxcomposite lib32-libxcomposite
 </code></pre>
 
 #### Red Hat-based distributions (CentOS, Fedora, etc.)
@@ -174,7 +172,7 @@ The easiest way to run games via Proton is to add them to your local Steam libra
 
 #### 3.3.2. Add doukutsu-rs to the Steam local library
 
-In the top menu click **"Games"** -> **"Add a Non-Steam Game to My Library"** and in the window that appears, select the doukutsu-rs Windows binary that you downloaded in step [3.1](linux.md#id-3.1.-download-doukutsu-rs-and-set-up-game-data).
+In the top menu click **"Games"** -> **"Add a Non-Steam Game to My Library"** and in the window that appears, select the doukutsu-rs Windows binary that you downloaded in [Step 1](linux.md#id-3.1.-download-doukutsu-rs-and-set-up-game-data).
 
 <figure><img src="../.gitbook/assets/setup-guide_linux_proton_add-non-steam-game.png" alt=""><figcaption></figcaption></figure>
 
@@ -186,9 +184,9 @@ Then open the application properties and set compatible tool to Proton (you can 
 
 <figure><img src="../.gitbook/assets/setup-guide_linux_proton_compatible-menu.png" alt=""><figcaption></figcaption></figure>
 
-Configuration is complete! When you click **"Play"**, Steam will automatically download and install the Proton of version you selected in the app properties. Wait for the installation to complete and doukutsu-rs is ready to playing.
+Configuration is complete! When you click **"Play"**, Steam will automatically download and install the Proton of version you selected in the app properties. Wait for the installation to complete and doukutsu-rs is ready to play.
 
-All user data (saves, settings and logs) will be located in `$HOME/.steam/steam/steamapps/compdata/{APP_ID}/pfx/drive_c/users/steamuser/AppData/Local/doukutsu-rs/data`, where `{APP_ID}` of the doukutsu-rs you can be found by searching through all folders and checking if the specified doukutsu-rs folder is there (it will be created after the first run).
+All user data (saves, settings and logs) will be located in `$HOME/.steam/steam/steamapps/compdata/{APP_ID}/pfx/drive_c/users/steamuser/AppData/Local/doukutsu-rs/data`, where `{APP_ID}` of doukutsu-rs you can find by searching through all folders and checking if the specified doukutsu-rs folder is there (it will be created after the first run).
 
 ***
 
