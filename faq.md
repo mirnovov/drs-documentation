@@ -12,13 +12,13 @@ The answer to this question is on the home page [of our website](https://doukuts
 
 > **A reimplementation of Cave Story engine with many quality-of-life improvements.**
 
-Please note that doukutsu-rs **is not a decompilation**, as it's written from scratch and does not contain the source code of the original game (unlike _CSE2 - Cave Story Engine 2_, which is actually a fan decompilation of a freeware executable).
+Please note that doukutsu-rs **is not a decompilation**, as it's written from scratch and does not contain the source code of the original game (unlike CSE2[^1], which is actually a fan decompilation of a freeware executable).
 
 **doukutsu-rs** was originally started as a Rust learning project and meme, but after a while it evolved into a drop-in replacement for the major editions of the game (the original 2004 freeware edition, Cave Story+ for PC and Cave Story+ for Switch).
 
 While doukutsu-rs **tries to be faithful** in behaviour to the original game, it **doesn't aim to be an exact copy** of it. For example, doukutsu-rs lacks bugs that exist in the vanilla version of the game, so there are some differences in behaviour (e.g. [issue #278](https://github.com/doukutsu-rs/doukutsu-rs/issues/278#issuecomment-2403594236)), but also includes features such as cutscene skip, lighting effects, subpixel scrolling and V-Sync support.
 
-Also some features are not planned to be implemented such as Steam achievements, leaderboard, coop offscreen, Sand Zone floor particles.
+Also some features are not planned to be implemented such as Steam achievements, leaderboard, coop offscreen or floor particles in Sand Zone.
 
 ### Where are the saves/settings/logs?
 
@@ -63,6 +63,10 @@ doukutsu-rs uses a freeware compatible save format, so each slot is stored in a 
 
 However, work on adding support for CS+ and CS+ Switch saves has already [started](https://github.com/doukutsu-rs/doukutsu-rs/pull/317).
 
+### Is a fixed window ratio (e.g. 4:3 as in the freeware) or resolution supported?
+
+No, but [the DrGlaucous's fork](https://github.com/DrGlaucous/doukutsu-rs-nm) supports fixed window ratio. However, it doesn't have prebuilts, so you'll have to build it from the source code. See [initial-setup-and-compiling](modders-handbook/initial-setup-and-compiling/ "mention") (don't forget to add the `--release` argument to `cargo build`).
+
 ## Platform Support
 
 ### Is controller supported on Android?
@@ -73,17 +77,17 @@ However, you can use [doukutsu-rs port for RetroArch](https://github.com/DrGlauc
 
 ### Which platforms is doukutsu-rs available on?
 
-doukutsu-rs is officialy supported on PC ([Windows 10+](#user-content-fn-1)[^1], Linux, macOS 10.12+) and Android 7.0. The builds for these platforms are stable: release builds as well as nightly builds are available for them.
+doukutsu-rs is officialy supported on PC ([Windows 10+](#user-content-fn-2)[^2], Linux, macOS 10.12+) and Android 7.0. The builds for these platforms are stable: release builds as well as nightly builds are available for them.
 
-In addition, doukutsu-rs also has several experimental ports, such as the Nintendo Switch port. There are no fresh builds of the engine for experimental ports, due to the lack of active support for these platforms by doukutsu-rs maintainers.
+In addition, doukutsu-rs also has several experimental ports, such as the Nintendo Switch port. There are no fresh builds of the engine for experimental ports, due to the lack of active support for them by doukutsu-rs maintainers.
 
 ### You should make a port to the XYZ platform.
 
-doukutsu-rs is available the most common platforms, so **there are no plans** to port to other platforms yet.
+doukutsu-rs is available on the most common platforms, so **there are no plans** to port to other platforms yet.
 
 ### Why are there no new builds for Switch?
 
-Due to the lack of active support for this platform from the engine maintainers, the toolchain used to build the game for this platform are obsolete and can no longer be used. Due to the lack of time and desire of the maintainers to address this issue, new builds aren't available.
+Due to the lack of active support for this platform from the engine maintainers, the toolchain used to build the engine for this platform are obsolete and can no longer be used. Due to the lack of time and desire of the maintainers to address this issue, new builds aren't available.
 
 ***
 
@@ -114,4 +118,12 @@ Someday. ¯\\\_(ツ)\_/¯
 * Easy - damage dealt by enemies is halved.
 * Difficult - no life capsules and missile launcher.
 
-[^1]: Although the engine can be built for Windows 7, there are no release builds targeting it, and the possibility to run doukutsu-rs release builds on Windows 7 hasn't been tested.
+***
+
+## Still have questions?
+
+&#x20;Feel free to ask them on the project's [Discord server](https://discord.gg/fbRsNNB) or [Github issues](https://github.com/doukutsu-rs/doukutsu-rs/issues/new/choose).
+
+[^1]: Cave Story Engine 2
+
+[^2]: Although Windows 7 has been chosen by the community to be supported and doukutsu-rs can be built for it, there are no release builds targeting this platform.
