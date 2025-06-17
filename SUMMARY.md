@@ -14,6 +14,7 @@
   * [Windows](setup-guide/windows.md)
   * [Linux](setup-guide/linux.md)
   * [macOS](setup-guide/macos.md)
+* [FAQ](faq.md)
 
 ## Modder's handbook
 
