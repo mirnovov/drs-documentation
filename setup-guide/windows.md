@@ -1,5 +1,7 @@
 # Windows
 
+{% include "../.gitbook/includes/if-you-dont-know-where-to-....md" %}
+
 Setting up doukutsu-rs on your Windows PC is straightforward - just follow those steps.
 
 ### 1. Download doukutsu-rs
@@ -48,7 +50,7 @@ Setting up doukutsu-rs on your Windows PC is straightforward - just follow those
 * **Important:** Make sure doukutsu-rs is completely closed before updating.
 * Once downloaded, drag the new `.exe` file into your "doukutsu-rs folder".
 * You can then delete the old `.exe` file in your folder, or just replace it by dragging the new one in and choosing "Replace" if Windows prompts you.
-* **Your settings and save files are safe!** Updating only replaces the program itself. Your game settings and saved games are stored separately (either in the "user" folder if you created it, or in the default Windows location), so they will not be affected by updating the program file.
+* **Your settings and save files are safe!** Updating only replaces the program itself. Your game settings and saved games are stored separately ( [#where-are-the-saves-settings-logs](../faq.md#where-are-the-saves-settings-logs "mention") ), so they will not be affected by updating the program file.
 
 **Setup Complete!**
 

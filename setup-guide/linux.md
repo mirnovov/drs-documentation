@@ -44,7 +44,7 @@ If you like to keep things lean and mean, and want to run doukutsu-rs directly o
 
 ***
 
-### 2.1. Download doukutsu-rs&#x20;
+### 2.1. Download doukutsu-rs
 
 * Go to the doukutsu-rs downloads page: [**https://get.doukutsu.rs**](https://get.doukutsu.rs)
 * Choose the version for your processor architecture, if it's available.
@@ -92,9 +92,9 @@ If you like to keep things lean and mean, and want to run doukutsu-rs directly o
 * Updating doukutsu-rs is very easy! When a new version is released, simply download the new `.elf` program file from the [downloads page](https://get.doukutsu.rs) (just like you did in Step 1).
 * **Important:** Make sure doukutsu-rs is completely closed before updating.
 * Once downloaded, drag the new `.elf` file into your "doukutsu-rs folder".
-* You can then delete the old `.elf` file in your folder, or just replace it by dragging the new one in and choosing "Replace" if Windows prompts you.
+* You can then delete the old `.elf` file in your folder, or just replace it by dragging the new one in and choosing "Replace" if the file manager prompts you.
 * Ensure that the new file has execute permission set.
-* **Your settings and save files are safe!** Updating only replaces the program itself. Your game settings and saved games are stored separately (either in the "user" folder if you created it, or in the default Windows location), so they will not be affected by updating the program file.
+* **Your settings and save files are safe!** Updating only replaces the program itself. Your game settings and saved games are stored separately ([#where-are-the-saves-settings-logs](../faq.md#where-are-the-saves-settings-logs "mention")), so they will not be affected by updating the program file.
 
 **Setup Complete!**
 

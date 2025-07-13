@@ -77,7 +77,7 @@ However, you can use [doukutsu-rs port for RetroArch](https://github.com/DrGlauc
 
 ### Which platforms is doukutsu-rs available on?
 
-doukutsu-rs is officialy supported on PC ([Windows 10+](#user-content-fn-2)[^2], Linux, macOS 10.12+) and Android 7.0. The builds for these platforms are stable: release builds as well as nightly builds are available for them.
+doukutsu-rs is officialy supported on PC ([Windows 10+](#user-content-fn-2)[^2], Linux, macOS 10.12+) and Android 7+. The builds for these platforms are stable: release builds as well as nightly builds are available for them.
 
 In addition, doukutsu-rs also has several experimental ports, such as the Nintendo Switch port. There are no fresh builds of the engine for experimental ports, due to the lack of active support for them by doukutsu-rs maintainers.
 
@@ -116,7 +116,7 @@ Someday. ¯\\\_(ツ)\_/¯
 ### What are the differences between the difficulty levels?
 
 * Easy - damage dealt by enemies is halved.
-* Difficult - no life capsules and missile launcher.
+* Hard - no life capsules and missile launcher.
 
 ***
 
