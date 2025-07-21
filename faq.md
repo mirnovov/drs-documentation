@@ -35,6 +35,8 @@ Otherwise, the location of the user data depends on the platform:
   * if you downloaded **the `.elf` executable file**: `$HOME/.local/share/doukutsu-rs/`;
 * on **Android**: see [#how-to-open-game-user-data-directory-on-android](faq.md#how-to-open-game-user-data-directory-on-android "mention")
 
+The logs are stored in the `logs` folder next to the user data directory.
+
 ### How to open game/user data directory on Android?
 
 If you have an app on your device called `Files` (app id `com.google.android.documentsui`), open it, swipe from the left edge to the right (or press the `≡` menu icon) and select `doukutsu-rs` from the list. Saves will be in the `saves` folder, game data in the `data` folder, logs in the `logs` folder.
