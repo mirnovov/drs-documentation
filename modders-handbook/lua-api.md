@@ -20,9 +20,8 @@ There are various internal engine-specific settings that can be changed in douku
 
 #### Setting types
 
-| Type       | Description                                                                         |
-| ---------- | ----------------------------------------------------------------------------------- |
 | int        | a signed integer                                                                    |
+| ---------- | ----------------------------------------------------------------------------------- |
 | uint       | an unsigned integer                                                                 |
 | float      | a floating point number                                                             |
 | string     | a string literal                                                                    |

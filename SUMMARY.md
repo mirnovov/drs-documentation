@@ -14,6 +14,7 @@
   * [Windows](setup-guide/windows.md)
   * [Linux](setup-guide/linux.md)
   * [macOS](setup-guide/macos.md)
+* [Advanced configuration](advanced-configuration.md)
 * [FAQ](faq.md)
 
 ## Modder's handbook
@@ -21,6 +22,7 @@
 * [Introduction](modders-handbook/introduction.md)
 * [Initial setup and compiling](modders-handbook/initial-setup-and-compiling/README.md)
   * [Building the ports](modders-handbook/initial-setup-and-compiling/building-the-ports.md)
+* [Debugging and testing](modders-handbook/debugging-and-testing.md)
 * [Lua API](modders-handbook/lua-api.md)
 
 ## References
