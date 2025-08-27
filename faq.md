@@ -14,7 +14,9 @@ The answer to this question is on the home page [of our website](https://doukuts
 
 Please note that doukutsu-rs **is not a decompilation**, as it's written from scratch and does not contain the source code of the original game (unlike CSE2[^1], which is actually a fan decompilation of a freeware executable).
 
-**doukutsu-rs** was originally started as a Rust learning project and meme, but after a while it evolved into a drop-in replacement for the major editions of the game (the original 2004 freeware edition, Cave Story+ for PC and Cave Story+ for Switch).
+**doukutsu-rs** was originally started as a Rust learning project and meme[^2], but after a while it evolved into a drop-in replacement for the major editions of the game (the original 2004 freeware edition, Cave Story+ for PC and Cave Story+ for Switch).
+
+Starting with version 0.99.0-beta1, released on January 16, 2022, **the game is fully playable**. Work is currently underway to further improve the engine and fix some discrepancies with the original game.
 
 While doukutsu-rs **tries to be faithful** in behaviour to the original game, it **doesn't aim to be an exact copy** of it. For example, doukutsu-rs lacks bugs that exist in the vanilla version of the game, so there are some differences in behaviour (e.g. [issue #278](https://github.com/doukutsu-rs/doukutsu-rs/issues/278#issuecomment-2403594236)), but also includes features such as cutscene skip, lighting effects, subpixel scrolling and V-Sync support.
 
@@ -79,7 +81,7 @@ However, you can use [doukutsu-rs port for RetroArch](https://github.com/DrGlauc
 
 ### Which platforms is doukutsu-rs available on?
 
-doukutsu-rs is officialy supported on PC ([Windows 10+](#user-content-fn-2)[^2], Linux, macOS 10.12+) and Android 7+. The builds for these platforms are stable: release builds as well as nightly builds are available for them.
+doukutsu-rs is officialy supported on PC ([Windows 10+](#user-content-fn-3)[^3], Linux, macOS 10.12+) and Android 7+. The builds for these platforms are stable: release builds as well as nightly builds are available for them.
 
 In addition, doukutsu-rs also has several experimental ports, such as the Nintendo Switch port. There are no fresh builds of the engine for experimental ports, due to the lack of active support for them by doukutsu-rs maintainers.
 
@@ -120,6 +122,13 @@ Someday. ¯\\\_(ツ)\_/¯
 * Easy - damage dealt by enemies is halved.
 * Hard - no life capsules and missile launcher.
 
+### How to activate seasonal textures?
+
+They're used automatically if `Graphics -> Seasonal textures` option is enabled and the appropriate date has arrived.
+
+* Christmas textures are active from December 24 through January 6.
+* Halloween textures are active from October 26 through November 2.
+
 ***
 
 ## Still have questions?
@@ -128,4 +137,6 @@ Someday. ¯\\\_(ツ)\_/¯
 
 [^1]: Cave Story Engine 2
 
-[^2]: Although Windows 7 has been chosen by the community to be supported and doukutsu-rs can be built for it, there are no release builds targeting this platform.
+[^2]: RiiR — Rewrite it in Rust.
+
+[^3]: Although Windows 7 has been chosen by the community to be supported and doukutsu-rs can be built for it, there are no release builds targeting this platform.

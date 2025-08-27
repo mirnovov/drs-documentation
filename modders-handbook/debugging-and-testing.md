@@ -32,14 +32,14 @@ The debug menu contains the following information:
   * **NPC Inspector** — list of NPCs on the map and their properties
   * **Save**
   * **Hotkey list**
-  * **Command line** — opens the command line
+  * **Command line** — opens the debug command line
 
 You can also use hotkeys to toggle some settings that are missing in the debug menu:
 
 * `Ctrl + S` — quick save
 * `ESC + F2` — quick reset (quick load)
 * `F3` — toggle godmode (invulnerability)
-* `F4` — toggle infinite[^1] booster fuel
+* `F4` — toggle [infinite booster fuel](#user-content-fn-1)[^1]
 * `F5` — toggle subpixel scrolling
 * `F6` — toggle motion interpolation
 * `F7` — reset game speed multiplier
@@ -66,7 +66,7 @@ List of inbuilt commands (in `/command param` format):
 * `/set_weapon_max_ammo max_ammo_count` - sets the maximum number of ammunition for the currently selected weapon.
 * `/refill_ammo` - refills the ammo of the currently selected player weapon.
 * `/refill_hp` - refills player's health.
-* `/add_xp xp_count` / `/remove_xp xp_count` - adds/removes the specified number of XP to the currently selected player weapon.
+* `/add_xp xp_count`, `/remove_xp xp_count` - adds/removes the specified number of XP to the currently selected player weapon.
 * `/set_max_hp hp_count` - set the value of player's max health.
 * `/spawn_npc npc_id` - spawn NPC of the specified type in front of the player.
 * `/teleport_player x y` - teleport the player to the specified coordinates. Parameters `x` and `y` are floating point numbers (`f32`/`float` data type).

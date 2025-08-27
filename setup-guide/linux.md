@@ -1,5 +1,7 @@
 # Linux
 
+{% include "../.gitbook/includes/if-you-dont-know-where-to-....md" %}
+
 Linux gives you choices, and installing doukutsu-rs is no different! Here are a few ways to get it running on your system, pick the one that sounds best for you:
 
 ## 1. The Easiest Way: Install with Flatpak

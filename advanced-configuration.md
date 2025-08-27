@@ -55,6 +55,5 @@ Boolean parameters don't accept values and are off by default. String parameters
 |       Name      | Value type | Values |                                                                                             Description                                                                                             |
 | :-------------: | :--------: | :----: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | `--server-mode` |  `boolean` |    -   | <p>Do not create a window and skip audio initialization.</p><p></p><p>It was probably intended for use in online multiplayer, but currenly there's no practical application for this parameter.</p> |
-|    `--editor`   |  `boolean` |    -   |                              <p>Enable built-in editor.</p><p>Only applicable if the engine was compiled with the editor function. The editor is currently broken.</p>                              |
 |     `--help`    |  `boolean` |    -   |                                                             Prints a description of all available CLI parameters and exits the program.                                                             |
 
